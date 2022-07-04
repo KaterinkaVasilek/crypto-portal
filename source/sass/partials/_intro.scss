@@ -1,0 +1,86 @@
+.intro {
+    background: $intro-background;
+    padding-top: 86px;
+    padding-bottom: 647px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    &__title {
+        font-weight: $font-weight600;
+        font-size: $font-sise70;
+        line-height: $line-height85;
+        overflow-wrap: break-word;
+        background-image: $main-color;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__img {
+        position: absolute;
+        background-image: url(../../img/pics/intro.png);
+        background-repeat: no-repeat;
+        width: 257px;
+        height: 280px;
+        top: 222px;
+    }
+}
+.intro__title span {
+    display: block;
+    font-size: 32px;
+    line-height: 24px;
+}
+
+.intro::after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    top: 31px;
+    right: 75px;
+    border: none;
+    border-radius: 50%;
+    background: $main-color;
+}
+.intro::before {
+    position: absolute;
+    content: '';
+    width: 31.43px;
+    height: 31.43px;
+    top: 50px;
+    right: 24px;
+    border: none;
+    border-radius: 50%;
+    background: $main-color;
+}
+.intro__text {
+    position: absolute;
+    display: block;
+    overflow-wrap: break-word;
+    width: 247px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    bottom: 188px;
+    color: $white;
+    &-color {
+        background: linear-gradient(98.66deg, #88A3E8 4.55%, #C8A1D6 109.18%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.social {
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 161px;
+    list-style: none;
+    padding-left: 0;
+}
+.arrows {
+    width: 37px;
+    height: 41px;
+    position: absolute;
+    bottom: 38px;
+}

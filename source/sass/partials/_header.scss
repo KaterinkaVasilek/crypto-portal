@@ -1,0 +1,30 @@
+.header {
+    margin: 0 auto;
+}
+.nav {
+    display: flex;
+    padding:11px 0 4px 12px;
+    &__logo {
+        padding-right: 84px;
+    }
+}
+.menu {
+    position: relative;
+    display: block;
+    top: -3px;
+    width: 43.5px;
+    height: 43.5px;
+    border: none;
+    border-radius: 30.5044px;
+    background-color: $blue;
+}
+.menu::after {
+    position: absolute;
+    content: '';
+    top: 15px;
+    right: 11px;
+    width: 21px;
+    height: 1.5px;
+    background-color: $white;
+    box-shadow: 0 6px 0 $white, 0 12px 0 $white;
+}

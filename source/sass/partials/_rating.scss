@@ -1,0 +1,120 @@
+.rating {
+    background-color: $white;
+    border-radius: 14px;
+    position: relative;
+    z-index: 2;
+    margin: 28px 16px 0;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.table {
+    border: 2px solid transparent;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+}
+
+.table__names {
+    background-color: $light-grey;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    line-height: 13px;
+    color: $dark-grey;
+}
+
+
+thead {
+    width: 100%;
+    height: 7em;
+}
+
+// tbody {
+//     width: 100%;
+//     height: 33.3em;
+// }
+
+.table__thead-title {
+    word-break: break-all;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: $dark-grey;
+    text-align: center;
+    background-color: $light-grey;
+}
+
+.rating__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 59px;
+    color: blue;
+    padding: 11px 27px 0 27px;
+    text-align: center;
+}
+
+// .rating__table {
+//     width: 91%;
+    
+//     left: 0;
+//     right: 0;
+// }
+
+td, th {
+    border: 0.16px solid #C8C8C8;
+    text-align: center;
+}
+// tr {
+//     height: 77px;
+// }
+td a {
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: blue;
+}
+.amount {
+    @include tableFont;
+    color: $green;
+    padding-top: 29px;
+    padding-bottom: 22px;
+}
+.reviews {
+    @include tableFont;
+    color: $blue;
+}
+.table__payget {
+    background: url(../../img/pics/PayGet.png) center no-repeat;
+    &-height {
+        min-height: 78px;
+    }
+}
+.table__enter-change {
+    background: url(../../img/pics/EnterChange.png) center no-repeat;
+    &-height {
+        min-height: 69px;
+    }
+}
+.table__kassa {
+    background: url(../../img/pics/Kassa.png) center no-repeat;
+    &-height {
+        min-height: 69px;
+    }
+}
+.table__baksman {
+    background: url(../../img/pics/Baksman.png) center no-repeat;
+    &-height {
+        min-height: 69px;
+    }
+}
+.table__365 {
+    background: url(../../img/pics/365Cash.png) center no-repeat;
+    &-height {
+        min-height: 82px;
+    }
+}
+.td-padding {
+    padding-right: 10px;
+    padding-left: 10px;
+}
