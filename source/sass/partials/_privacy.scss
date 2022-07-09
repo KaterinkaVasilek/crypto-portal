@@ -1,5 +1,5 @@
-.content-bottom {
-  padding-top: 30px;
+.content__wrapper-border {
+  margin: 25px 25px;
 }
 
 .privacy {
@@ -8,7 +8,7 @@
 
   &__title {
     @include cardTitle;
-    font-size: 1.3em; //16px;
+    font-size: 1em; //16px;
     border-left: 2px solid $blue;
     padding-left: 12px;
   }
