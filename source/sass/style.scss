@@ -132,8 +132,12 @@ body {
     padding-top: 20px;
   }
 
+  .intro__text-content {
+    padding-left: 1%;
+  }
+
   .social {
-    margin-left: revert;
+    margin-left: 6%;
   }
 
   .arrows {
@@ -150,10 +154,10 @@ body {
     background-image: url("../img/pics/Group202.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 449px;
-    height: 417px;
-    top: 49px;
-    right: 5%;
+    width: 390px;
+    height: 362px;
+    top: 106px;
+    right: 2%;
   }
   //rating
   .desktop {
@@ -400,6 +404,14 @@ body {
     width: 475px;
     right: 0;
   }
+
+  .intro__text-content {
+    padding-left: 6%;
+  }
+
+  .social {
+    margin-left: 105px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -560,8 +572,16 @@ body {
       font-size: 134px;
       line-height: 145px;
       align-self: flex-start;
-      padding-left: 11%;
+      padding-left: 0;
       padding-top: 143px;
+    }
+
+    &__subtitle {
+      padding-left: 0;
+      font-size: 62px;
+      line-height: 58px;
+      align-self: flex-start;
+      padding-bottom: 18px;
     }
 
     &__img {
@@ -573,7 +593,7 @@ body {
 
     &__text {
       padding-top: 7px;
-      padding-left: 12%;
+      padding-left: 0;
       bottom: 300px;
       font-size: 1em; //16px;
       line-height: 20px;
@@ -581,24 +601,21 @@ body {
     }
   }
 
+  .intro__text-content {
+    padding-left: 70px;
+  }
+
   .intro__wrapper::after {
     width: 594px;
     height: 554px;
-    right: 0;
+    right: 30px;
     top: 110px;
-  }
-
-  .intro__subtitle {
-    font-size: 62px;
-    line-height: 58px;
-    align-self: flex-start;
-    padding-left: 11%;
-    padding-bottom: 18px;
   }
 
   .social {
     flex-direction: column;
     padding-top: 0;
+    margin-left: 0;
 
     &__item:not(:last-child) {
       padding-bottom: 18px;
@@ -607,7 +624,7 @@ body {
 
   .arrows {
     bottom: 225px;
-    left: 27%;
+    left: 22%;
   }
 
   .content__wrapper-border {
