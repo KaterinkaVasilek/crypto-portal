@@ -7,18 +7,33 @@
     &__info {
         @include commentsInfo;
     }
+    &__label {
+        font-weight: 600;
+        font-size: 0.6em; //10px;
+        line-height: 12px;
+        color: $dark-grey;
+        align-self: flex-start;
+        padding-left: 7px;
+        padding-bottom: 6px;
+    }
+    &__area {
+        padding-top: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form__btn {
+        font-weight: 500;
+        font-size: 0.7em; //11px;
+        line-height: 13px;
+        @include btn-static;
+        padding: 10.5px 20px;
+        border-radius: 21px;
+        margin-right: 6px;
+    }
 }
-.form__info--bottom {
+.form__info-bottom {
     padding-bottom: 10px;
-}
-.form__label {
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 12px;
-    color: $dark-grey;
-    align-self: flex-start;
-    padding-left: 7px;
-    padding-bottom: 6px;
 }
 .form__input {
     @include input;
@@ -27,22 +42,9 @@
     @include input;
     min-height: 173px;
 }
-.form__area {
-    padding-top: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.form__btn {
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 13px;
-    color: $white;
-    background-color: $blue;
-    padding: 10.5px 20px;
-    border-radius: 21px;
-    border: none;
-    margin-right: 6px;
+
+.form__btn:hover {
+    @include btn-hover;
 }
 .form::after {
     position: absolute;

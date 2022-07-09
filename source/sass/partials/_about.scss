@@ -1,18 +1,20 @@
 .about {
     counter-reset: numbers;
     list-style-type: none;
-    padding: 68px 18px 0 25px;
+    padding: 68px 26px 0 25px;
     &__item {
         position: relative;
         display: block;
-        padding-bottom: 55px;
     }
 }
-.about__item::before {
+.about__item:not(:last-child) {
+    padding-bottom: 100px;
+}
+.about__item::after {
     position: absolute;
     width: 108px;
     height: 232px;
-    right: -24px;
+    right: 10px;
     top: -82px;
     font-family: $main-font;
     font-weight: 600;
@@ -25,42 +27,48 @@
 .about {
     &__title {
         font-weight: 600;
-        font-size: 20px;
+        font-size: 1.3em; //20px;
         line-height: 24px;
         color: $blue;
         padding-bottom: 13px;
     }
     &__text {
         font-weight: 400;
-        font-size: 10px;
+        font-size: 0.6em; //10px;
         line-height: 12px;
         color: $black;
     }
 }
-.about__text--bottom {
+.about__text:not(:last-child) {
     padding-bottom: 12px;
 }
 .about__item p:last-of-type {
-    padding-bottom: 101px;
+    padding-bottom: 25px;
 }
-.payget::after {
-    position: absolute;
-    content: '';
-    background: url(../img/pics/paygetAbout.png) no-repeat;
-    width: 170px;
-    height: 44px;
-    top: 326px;
-    left: 15px;
-}
-.payget__btn {
-    border: none;
-	background: $blue;
+.btn {
+    @include btn-static;
 	padding: 8px 33px;
 	text-decoration: none;
     font-weight: 500;
-    font-size: 11px;
+    font-size: 0.7em; //11px;
     line-height: 13px;
-    color: $white;
     border-radius: 21px;
-    margin-left: 26px;
+    &-size {
+        margin-top: 19px;
+        padding: 8px 59px;
+    }
+}
+.brn:hover {
+    @include btn-hover;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about__img {
+    padding-bottom: 20px;
+    &--hidden {
+        display: none;
+    }
 }

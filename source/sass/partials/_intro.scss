@@ -1,65 +1,64 @@
 .intro {
-    background: $intro-background;
-    padding-top: 86px;
-    padding-bottom: 647px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     position: relative;
+    background: $intro-background;
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 86px;
+        padding-bottom: 101px;
+    }
     &__title {
         font-weight: $font-weight600;
-        font-size: $font-sise70;
+        font-size: 4.25em; //70px;
         line-height: $line-height85;
         overflow-wrap: break-word;
         background-image: $main-color;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    &__img {
-        position: absolute;
-        background-image: url(../../img/pics/intro.png);
-        background-repeat: no-repeat;
-        width: 257px;
-        height: 280px;
-        top: 222px;
-    }
 }
-.intro__title span {
-    display: block;
-    font-size: 32px;
-    line-height: 24px;
+.intro__subtitle {
+    font-size: 2em; //33px;
+    font-weight: 600;
+    line-height: 25px;
+    overflow-wrap: break-word;
+    background-image: $main-color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
-.intro::after {
+.intro__wrapper::after {
     position: absolute;
     content: '';
+    background: url(../../img/pics/intro.png) no-repeat;
+    width: 257px;
+    height: 280px;
+    top: 222px;
+    
+}
+.intro::after {
+    @include circlePseudoElement;
     width: 15px;
     height: 15px;
     top: 31px;
     right: 75px;
-    border: none;
-    border-radius: 50%;
-    background: $main-color;
 }
 .intro::before {
-    position: absolute;
-    content: '';
-    width: 31.43px;
-    height: 31.43px;
+    @include circlePseudoElement;
+    width: 31px;
+    height: 31px;
     top: 50px;
     right: 24px;
-    border: none;
-    border-radius: 50%;
-    background: $main-color;
 }
 .intro__text {
-    position: absolute;
     display: block;
     overflow-wrap: break-word;
+    padding-top: 357px;
     width: 247px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.9em; //14px;
     line-height: 17px;
     bottom: 188px;
     color: $white;
@@ -70,8 +69,7 @@
     }
 }
 .social {
-    position: absolute;
-    bottom: 100px;
+    padding-top: 41px;
     display: flex;
     justify-content: space-between;
     min-width: 161px;

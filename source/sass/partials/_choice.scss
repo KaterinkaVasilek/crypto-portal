@@ -2,7 +2,7 @@
     padding: 41px 21px 0 24px;
     &__title {
         font-weight: 600;
-        font-size: 18px;
+        font-size: 1.2em; //18px;
         line-height: 22px;
         color: $blue;
         padding-bottom: 17px;
@@ -12,13 +12,13 @@
     &__text {
         @include choiceFont;
         color: $black;
-        &--color {
+        &-color {
             color: $dark-blue;
         }
     }
     &__list {
         font-weight: 600;
-        font-size: 9.57225px;
+        font-size: 10px;
         line-height: 12px;
         color: $dark-blue;
     }
@@ -33,6 +33,6 @@
     list-style-type: none;
     padding-left: 0;
 }
-.choice__text--top:first-child {
+.choice__text-top:first-child {
     padding-top: 17px;
 }

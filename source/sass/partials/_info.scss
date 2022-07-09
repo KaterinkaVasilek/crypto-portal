@@ -1,0 +1,37 @@
+.info {
+    padding-top: 36px;
+    padding-bottom: 53px;
+    margin-left: 36px;
+    margin-right: 36px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        font-weight: 600;
+        font-size: 1em; //16px;
+        line-height: 20px;
+        color: $blue;
+        padding-bottom: 8px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 0.6em; //10px;
+        line-height: 12px;
+        color: $black;
+        text-align: center;
+        &-weight {
+            font-weight: 600;
+        }
+    }
+}
+.info::after {
+    position: absolute;
+    content: '';
+    background:  url(../img/pics/Group55.svg) no-repeat;
+    width: 188px;
+    height: 163px;
+    bottom: -114px;
+    left: -110px;
+    z-index: -1;
+}

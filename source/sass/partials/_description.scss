@@ -1,14 +1,9 @@
 .description {
-    padding: 24px 12px 255px 35px;
-    margin-left: -10px;
-    margin-right: -11px;
-    background: $hard-dark-blue;
-    box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 28px;
-    position: relative;
+    padding: 24px 16px 251px 35px;
+    @include darkBlocks;
     &__title {
         font-weight: 600;
-        font-size: 17px;
+        font-size: 1em; //17px;
         line-height: 139.9%;
         color: $white;
         padding-bottom: 13px;
@@ -20,20 +15,9 @@
         color: $white;
         padding-right: 13px;
     }
-    // &__decor {
-    //     position: absolute;
-    //     background: url(../img/pics/Group23.svg) no-repeat;
-    // }
 }
-.description::before {
-    position: absolute;
-    z-index: -1;
-    content: '';
-    background: url(../img/pics/Group55.svg) no-repeat;
-    width: 240px;
-    height: 247px;
-    top: 74px;
-    right: 169px;
+.description span {
+    display: none;
 }
 .description::after {
     position: absolute;
@@ -41,6 +25,9 @@
     background: url(../img/pics/Group71.png) no-repeat;
     width: 334px;
     height: 267px;
-    bottom: 21px;
-    right: -90px;
+    bottom: 25px;
+    right: -87px;
+}
+.description__text:not(:last-child) {
+    padding-bottom: 21px;
 }

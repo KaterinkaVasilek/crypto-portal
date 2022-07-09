@@ -2,6 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body,
@@ -22,17 +23,11 @@ dd {
 }
 
 body {
-    font-family: $main-font;
     min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 }
-
-// ul[class],
-// ol[class] {
-//     list-style: none;
-// }
 
 details > summary {
     list-style: none;
@@ -49,10 +44,6 @@ a:not([class]) {
     text-decoration-skip-ink: auto;
 }
 
-img {
-    display: block;
-}
-
 article > * + * {
     margin-top: 1em;
 }
@@ -64,6 +55,19 @@ select {
     font: inherit;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -o-appearance: none;
+}
+select::-ms-expand {
+    display: none;
+}
+select:focus {
+    box-shadow: none!important;
+    outline: none !important;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;

@@ -1,5 +1,5 @@
 .comments {
-    padding: 39px 18px 0 25px;
+    padding: 39px 22px 0 25px;
     &__title {
         @include titleStyle;
     }
@@ -10,14 +10,14 @@
 }
 .comments__item {
     border-bottom: 1px solid rgba(200, 200, 200, 0.6);
-    &--top {
-        padding-top: 34px;
-    }
+}
+.comments__item:not(:first-child) {
+    padding-top: 12px;
 }
 .comments__info {
     @include commentsInfo;
     padding-bottom: 3px;
-    &--data {
+    &-data {
         font-weight: 600;
         padding-top: 20px;
     }
@@ -27,9 +27,13 @@
     font-weight: 400;
     color: $black;
     padding-top: 12px;
-    padding-bottom: 18px;
+    padding-bottom: 17px;
 }
 
 .comments__info--bottom {
     padding-bottom: 9px;
+}
+
+.user br {
+    display: none;
 }

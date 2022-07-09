@@ -1,38 +1,141 @@
 @mixin tableFont {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.5em; //16px;
     line-height: 20px;
 }
 @mixin choiceFont {
     font-weight: 400;
-    font-size: 10px;
-    line-height: 13px;
+    font-size: 0.63em; //10px;
+    line-height: 129%;//13px;
     padding-bottom: 14px;
 }
 @mixin commentsInfo {
     font-weight: 500;
-    font-size: 10px;
+    font-size: 0.6em; //10px;
     font-style: italic;
-    line-height: 12px;
+    line-height: 125%;//12px;
     color: $grey;
-}
-@mixin background {
-    background-color: $background-color;
-    
-    
 }
 @mixin titleStyle {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.9em; //14px;
     line-height: 17px;
     color: $blue;
     padding-bottom: 11px;
 }
+@mixin fontTitle {
+    font-size: 26px;
+    line-height: 32px;
+    padding-bottom: 25px;
+}
+@mixin fontText {
+    font-size: 18px;
+    line-height: 22px;
+}
+@mixin paddings {
+    padding-top: 460px;
+    padding-left: 52px;
+}
+
+@mixin background {
+    background-color: $background-color;
+}
+
 @mixin input {
-    max-width: 183px;
-    min-height: 65px;
+    max-width: 100%;
+    width: 91%;
+    min-height: 55px;
     border: 1px solid $grey-grey;
     border-radius: 10px;
     margin-bottom: 30px;
     margin-right: 9px;
+}
+@mixin darkBlocks {
+    margin-left: -10px;
+    margin-right: -11px;
+    background: $hard-dark-blue;
+    box-shadow: $box-shadow;
+    border-radius: 28px;
+    position: relative;
+}
+@mixin cardFontStyle {
+    font-weight: 600;
+    font-size: 0.75em; //12px;
+    line-height: 130%;
+    color: $white;
+}
+@mixin circlePseudoElement {
+    position: absolute;
+    content: '';
+    border: none;
+    border-radius: 50%;
+    background: $main-color;
+}
+@mixin select {
+    font-weight: 500;
+    font-size: 0.7em; //12px;
+    line-height: 15px;
+    color: $white; 
+    padding: 8px 0 8px 30px; 
+    width: 99%;
+    box-sizing: border-box; 
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: $very-dark-blue;
+}
+@mixin selectHover {
+    border: 1px solid $white;
+}
+@mixin selectFocus {
+    border: 1px solid $white;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring; 
+    color: $white;
+    outline: none; 
+}
+@mixin selectMarker {
+    position: absolute;
+    content: '';
+    z-index: 10;
+    width: 6px;
+    height: 6px;
+    top: 42px;
+    left: 15px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.47);
+    opacity: 0.6;
+}
+@mixin footerTitles {
+    font-weight: 600;
+    font-size: 0.9em; //14px;
+    line-height: 17px;
+    color: $white;
+}
+@mixin cardTitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $blue;
+}
+@mixin btn-static {
+    color: $blue;
+    background-color: $white;
+    border: 1px solid $blue;
+}
+@mixin btn-hover {
+    background-color: $blue;
+    color: $white;
+    border-color: transparent;
+}
+@mixin footerTitleDescktop {
+    color: $white;
+    font-size: 1em;
+}
+@mixin footerFontDesktop {
+    color: $white;
+    font-size: 0.7em;
+    line-height: 17px;
 }

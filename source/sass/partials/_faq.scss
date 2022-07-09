@@ -1,0 +1,65 @@
+.faq {
+    margin-top: 48px;
+    padding: 19px 15px 4px 27px;
+    @include darkBlocks;
+    padding-left: 0;
+    &__title {
+        font-weight: 600;
+        font-size: 1.5em; //24px;
+        line-height: 29px;
+        color: $white;
+        padding-left: 25px;
+        padding-bottom: 15px;
+    }
+    &__list {
+        padding-bottom: 14px;
+    }
+}
+.faq::before {
+    @include circlePseudoElement;
+    width: 21px;
+    height: 21px;
+    top: 49px;
+    left: -9px;
+}
+.faq::after {
+    @include circlePseudoElement;
+    width: 55px;
+    height: 55px;
+    background: url(../img/pics/Rectangle55.svg) no-repeat;
+    bottom: 0;
+    right: -3px;
+}
+.faq li::marker {
+    color: $white;
+    font-size: 0.5em;
+}
+.card {
+    padding-bottom: 18px;
+    &__title {
+        @include cardFontStyle;
+        padding-bottom: 18px;
+    }
+    &__text {
+        @include cardFontStyle;
+        font-weight: 400;
+        line-height: 130%;
+    }
+}
+.circle {
+    position: relative;
+    &::after {
+        @include circlePseudoElement;
+        width: 8px;
+        height: 8px;
+        right: 17px;
+        top: 26px;
+    }
+    &::before {
+        @include circlePseudoElement;
+        width: 16px;
+        height: 16px;
+        top: 61px;
+        right: 4px;
+    }
+}
