@@ -1,33 +1,39 @@
 .description {
-    padding: 24px 16px 251px 35px;
-    @include darkBlocks;
-    &__title {
-        font-weight: 600;
-        font-size: 1em; //17px;
-        line-height: 139.9%;
-        color: $white;
-        padding-bottom: 13px;
-    }
-    &__text {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 139.9%;
-        color: $white;
-        padding-right: 13px;
-    }
+  padding: 24px 16px 251px 35px;
+
+  @include darkBlocks;
+
+  &__title {
+    font-weight: 600;
+    font-size: 1em; //17px;
+    line-height: 139.9%;
+    color: $white;
+    padding-bottom: 13px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 139.9%;
+    color: $white;
+    padding-right: 13px;
+  }
 }
+
 .description span {
-    display: none;
+  display: none;
 }
+
 .description::after {
-    position: absolute;
-    content: '';
-    background: url(../img/pics/Group71.png) no-repeat;
-    width: 334px;
-    height: 267px;
-    bottom: 25px;
-    right: -87px;
+  position: absolute;
+  content: "";
+  background: url("../img/pics/Group71.png") no-repeat;
+  width: 252px;
+  height: 267px;
+  bottom: 25px;
+  right: 0;
 }
+
 .description__text:not(:last-child) {
-    padding-bottom: 21px;
+  padding-bottom: 21px;
 }

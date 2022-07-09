@@ -17,9 +17,12 @@
   <header class="header">
     <div class="header__wrapper">
       <a href="/">
-        <div class="header__wrapper--logo">
-          <svg width="160" height="39" viewBox="0 0 160 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="header__logo">
+          <svg class="small-logo-hidden" width="160" height="39" viewBox="0 0 160 39" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+          <svg class="big-logo-hidden" width="228" height="56" viewBox="0 0 228 56" fill="none">
+            <use xlink:href="img/sprite.svg#GroupLogo"></use>
           </svg>
         </div>
       </a>
@@ -33,9 +36,9 @@
         </button>
         <ul class="nav__list" id="nav__list">
           <li class="nav__item">
-            <a href="" class="nav__name">Новости</a>
+            <a href="#" class="nav__name">Новости</a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item nav__details">
             <details class="nav__filter">
               <summary class="nav__name">Биржи
                 <svg width="14" height="8" viewBox="0 0 14 8" fill="none">
@@ -64,17 +67,17 @@
             </details>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__name">О нас</a>
+            <a href="#" class="nav__name">О нас</a>
           </li>
           <li class="nav__item"><a href="privacy-policy.html" class="nav__name">Безопасность</a></li>
           <li class="nav__item">
-            <a href="" class="nav__name">Контакты</a>
+            <a href="#" class="nav__name">Контакты</a>
           </li>
-          <li class="nav__item">
-            <a href="" class="nav__name">Войти</a>
+          <li class="nav__item nav__item-btn">
+            <a href="#" class="nav__name nav__name-btn">Войти</a>
           </li>
-          <li class="nav__item">
-            <a href="" class="nav__name">Регистрация</a>
+          <li class="nav__item nav__item-btn">
+            <a href="#" class="nav__name nav__name-btn">Регистрация</a>
           </li>
         </ul>
       </nav>
@@ -118,45 +121,42 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__wrapper">
-          <div class="footer__content">
-            <div class="rates">
-              <h3 class="rates__title">Рейтинги</h3>
-              <div class="rates__content">
-                <span class="arrow"></span>
-                <select name="rates" class="rates__select">
-                  <option value="Криптокошельки" selected class="rates__item">Криптокошельки</option>
-                  <option value="Криптовалютные биржи">Криптовалютные биржи</option>
-                  <option value="Перспективные криптовалюты">Перспективные криптовалюты</option>
-                  <option value="Онлайн-обменники">Онлайн-обменники</option>
-                  <option value="Биткоин-обменники">Биткоин-обменники</option>
-                  <option value="Криптоботы">Криптоботы</option>
-                  <option value="Р2Р-биржи">Р2Р-биржи</option>
-                  <option value="Криптоброкеры">Криптоброкеры</option>
-                  <option value="Биткоин-биржи">Биткоин-биржи</option>
-                  <option value="Блокчейн-игры">Блокчейн-игры</option>
-                  <option value="Телеграм боты">Телеграм боты</option>
-                  <option value="Биткоин-краны">Биткоин-краны</option>
-                </select>
-              </div>
-            </div>
-            <div class="exchanges">
-              <h3 class="exchanges__title">Биржи</h3>
-              <div class="exchanges__content">
-                <span class="arrow"></span>
-                <select name="exchanges" class="exchanges__select">
-                  <option value="Binance" selected>Binance</option>
-                  <option value="Bybit">Bybit</option>
-                  <option value="OKX">OKX</option>
-                  <option value="FTX">FTX</option>
-                  <option value="Bitmex">Bitmex</option>
-                </select>
-              </div>
-            </div>
+      <div class="footer__wrapper container">
+        <div class="footer__item rates">
+          <h3 class="rates__title">Рейтинги</h3>
+          <div class="rates__content">
+            <select name="rates" class="rates__select">
+              <option value="Криптокошельки" selected>Криптокошельки</option>
+              <option value="Криптовалютные биржи">Криптовалютные биржи</option>
+              <option value="Перспективные криптовалюты">Перспективные криптовалюты</option>
+              <option value="Онлайн-обменники">Онлайн-обменники</option>
+              <option value="Биткоин-обменники">Биткоин-обменники</option>
+              <option value="Криптоботы">Криптоботы</option>
+              <option value="Р2Р-биржи">Р2Р-биржи</option>
+              <option value="Криптоброкеры">Криптоброкеры</option>
+              <option value="Биткоин-биржи">Биткоин-биржи</option>
+              <option value="Блокчейн-игры">Блокчейн-игры</option>
+              <option value="Телеграм боты">Телеграм боты</option>
+              <option value="Биткоин-краны">Биткоин-краны</option>
+            </select>
           </div>
-          <div class="footer__news">
-            <div class="blog">
-              <h3 class="blog__title">Недавние посты</h3>
+        </div>
+        <div class="footer__item exchanges">
+            <h3 class="exchanges__title">Биржи</h3>
+            <div class="exchanges__content">
+              <select name="exchanges" class="exchanges__select">
+                <option value="Binance" selected>Binance</option>
+                <option value="Bybit">Bybit</option>
+                <option value="OKX">OKX</option>
+                <option value="FTX">FTX</option>
+                <option value="Bitmex">Bitmex</option>
+              </select>
+            </div>
+        </div>
+        <span>
+          <h3 class="blog__title">Недавние посты</h3>
+          <ul class="blog">
+            <li class="blog__item">
               <div class="blog__post">
                 <p class="blog__text">Какие криптобиржи работают с российскими картами</p>
                 <div class="views">
@@ -166,6 +166,8 @@
                   <span class="blog__text">304</span>
                 </div>
               </div>
+            </li>
+            <li class="blog__item">
               <div class="blog__post">
                 <p class="blog__text">ТОП 27 лучших бирж для торговли криптовалютой</p>
                 <div class="views">
@@ -175,8 +177,10 @@
                   <span class="blog__text">115</span>
                 </div>
               </div>
+            </li>
+            <li class="blog__item">
               <div class="blog__post">
-                <p class="blog__text">Как купить стейблкоины за рубли</p>
+                <p class="blog__text">Как продать стейблкоины за рубли</p>
                 <div class="views">
                   <svg class="views__pic" width="13" height="9" viewBox="0 0 13 9" fill="none">
                     <use xlink:href="img/sprite.svg#eye"></use>
@@ -184,29 +188,203 @@
                   <span class="blog__text">304</span>
                 </div>
               </div>
-            </div>
-          </div>
-          <p class="footer__description">CryptoPortal.com — старейший и популярный информационно-аналитический портал о биткоине и криптовалютах, блокчейне, DeFi, NFT, криптобиржах, майнинге, обменниках и других темах. Работаем для вас с 2015 года.
-          </p>
-          <ul class="social__footer">
-            <li class="social__item">
+            </li>
+          </ul>
+        </span>
+        
+        <p class="footer__description">CryptoPortal.com — старейший и популярный информационно-аналитический портал о биткоине и криптовалютах, блокчейне, DeFi, NFT, криптобиржах, майнинге, обменниках и других темах. Работаем для вас с 2015 года.
+        </p>
+        <ul class="social footer__social">
+          <li class="social__item">
+            <a href="#">
               <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#telegram"></use>
               </svg>
-            </li>
-            <li class="social__item">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#">
               <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#facebook"></use>
               </svg>
-            </li>
-            <li class="social__item">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#">
               <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#twitter"></use>
               </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright">Copyright © Profinvestment.com, 2015 - 2022. Все права защищены. Все материалы данного сайта являются объектами авторского права. Запрещается копирование, распространение или любое иное использование информации и объектов без предварительного согласия правообладателя. Все статьи носят информационный характер и не являются призывом к действию.</p>
+      </div>
+      <div class="footer__wrapper-desktop container">
+        <div class="footer__wrapper-desktop-content">
+          <div>
+            <h3 class="footer__wrapper-ul-title">Рейтинги</h3>
+            <ul class="footer__wrapper-ul">
+              <li class="footer__wrapper-item">Криптокошельки</li>
+              <li class="footer__wrapper-item">Криптовалютные биржи</li>
+              <li class="footer__wrapper-item">Перспективные криптовалюты</li>
+              <li class="footer__wrapper-item">Онлайн-обменники</li>
+              <li class="footer__wrapper-item">Биткоин-обменники</li>
+              <li class="footer__wrapper-item">Криптоботы</li>
+              <li class="footer__wrapper-item">Р2Р-биржи</li>
+              <li class="footer__wrapper-item">Криптоброкеры</li>
+              <li class="footer__wrapper-item">Биткоин-биржи</li>
+              <li class="footer__wrapper-item">Блокчейн-игры</li>
+              <li class="footer__wrapper-item">Телеграм боты</li>
+              <li class="footer__wrapper-item">Биткоин-краны</li>
+            </ul>
+          </div>
+          <div class="footer__wrapper-el">
+            <div>
+              <h3 class="footer__wrapper-ol-title">Биржи</h3>
+              <ol class="footer__wrapper-ol">
+                <li class="footer__wrapper-ol-item">
+                  <a href="#">Binance</a>
+                </li>
+                <li class="footer__wrapper-ol-item">
+                  <a href="#">Bybit</a>
+                </li>
+                <li class="footer__wrapper-ol-item">
+                  <a href="#">OKX</a>
+                </li>
+                <li class="footer__wrapper-ol-item">
+                  <a href="#">FTX</a>
+                </li>
+                <li class="footer__wrapper-ol-item">
+                  <a href="#">Bitmex</a>
+                </li>
+              </ol>
+            </div>
+            <ul class="blog">
+              <h3 class="blog__title">Недавние посты</h3>
+              <li class="blog__item">
+                <div class="blog__post font">
+                  <p class="blog__text">Какие криптобиржи работают с российскими картами</p>
+                  <div class="views">
+                    <svg class="views__pic" width="13" height="9" viewBox="0 0 13 9" fill="none">
+                      <use xlink:href="img/sprite.svg#eye"></use>
+                    </svg>
+                    <span class="blog__text">304</span>
+                  </div>
+                </div>
+              </li>
+              <li class="blog__item">
+                <div class="blog__post font">
+                  <p class="blog__text">ТОП 27 лучших бирж для торговли криптовалютой</p>
+                  <div class="views">
+                    <svg class="views__pic" width="13" height="9" viewBox="0 0 13 9" fill="none">
+                      <use xlink:href="img/sprite.svg#eye"></use>
+                    </svg>
+                    <span class="blog__text">115</span>
+                  </div>
+                </div>
+              </li>
+              <li class="blog__item">
+                <div class="blog__post font">
+                  <p class="blog__text">Как продать стейблкоины за рубли</p>
+                  <div class="views">
+                    <svg class="views__pic" width="13" height="9" viewBox="0 0 13 9" fill="none">
+                      <use xlink:href="img/sprite.svg#eye"></use>
+                    </svg>
+                    <span class="blog__text">304</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__wrapper-info">
+            <p class="footer__description footer__wrapper-desktop-description">CryptoPortal.com — старейший и популярный информационно-аналитический портал о биткоине и криптовалютах, блокчейне, DeFi, NFT, криптобиржах, майнинге, обменниках и других темах. Работаем для вас с 2015 года.</p>
+            <a href="mailto:email@crypto-portal.ru" class="footer__description footer__wrapper-desktop-description footer__wrapper-nav-email">Email: <span class="email">author.profinvestment.com@gmail.</span></a>
+            <ul class="footer__wrapper-nav">
+              <li class="footer__wrapper-nav-item">
+                <a href="#">
+                  О сайте
+                </a>
+              </li>
+              <li class="footer__wrapper-nav-item">
+                <a href="#">
+                  Контакты
+                </a>
+              </li>
+              <li class="footer__wrapper-nav-item">
+                <a href="#">
+                  Авторы
+                </a>
+              </li>
+              <li class="footer__wrapper-nav-item">
+                <a href="#">
+                  Блог
+                </a>
+              </li>
+              <li class="footer__wrapper-nav-item">
+                <a href="#">
+                  Пользовательское соглашение
+                </a>
+              </li>
+              <li class="footer__wrapper-nav-item">
+                <a href="privacy-policy.html">
+                  Политика конфиденциальности
+                </a>
+              </li>
+              <li class="footer__wrapper-nav-item">
+                <a href="#">
+                  Отказ от ответственности
+                </a>
+              </li>
+            </ul>
+            <ul class="social footer__social footer__social-desktop">
+              <li class="social__item">
+                <a href="#">
+                  <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#">
+                  <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#">
+                  <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#">Криптовалюта</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Новичкам</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Биткоин</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Биржи криптовалют</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Кошельки</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Майнинг</a>
             </li>
           </ul>
-          <p class="copyright">Copyright © Profinvestment.com, 2015 - 2022. Все права защищены. Все материалы данного сайта являются объектами авторского права. Запрещается копирование, распространение или любое иное использование информации и объектов без предварительного согласия правообладателя. Все статьи носят информационный характер и не являются призывом к действию.</p>
-        </div>
+        </nav>
+        <p class="copyright">Copyright © Profinvestment.com, 2015 - 2022. Все права защищены. Все материалы данного сайта являются объектами авторского права. Запрещается копирование, распространение или любое иное использование информации и объектов без предварительного согласия правообладателя. Все статьи носят информационный характер и не являются призывом к действию.</p>
+      </div>
     </footer>
     <script src="js/main.js"></script>
 </body>

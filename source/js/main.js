@@ -1,6 +1,6 @@
 'use strict';
 
-let toggleButton = document.querySelector(".toggle__menu"), 
+let toggleButton = document.querySelector(".toggle-menu"), 
 navBar = document.querySelector(".nav__bar"); 
 
 toggleButton.addEventListener("click", (function () { navBar.classList.toggle("toggle") }));

@@ -1,39 +1,46 @@
 .comments {
-    padding: 39px 22px 0 25px;
-    &__title {
-        @include titleStyle;
-    }
+  padding: 39px 22px 0 25px;
+
+  &__title {
+    @include titleStyle;
+  }
 }
+
 .comments ul {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
+
 .comments__item {
-    border-bottom: 1px solid rgba(200, 200, 200, 0.6);
+  border-bottom: 1px solid rgba(200, 200, 200, 0.6);
 }
+
 .comments__item:not(:first-child) {
-    padding-top: 12px;
+  padding-top: 12px;
 }
+
 .comments__info {
-    @include commentsInfo;
-    padding-bottom: 3px;
-    &-data {
-        font-weight: 600;
-        padding-top: 20px;
-    }
+  @include commentsInfo;
+  padding-bottom: 3px;
+
+  &-data {
+    font-weight: 600;
+    padding-top: 20px;
+  }
 }
+
 .comments__text {
-    @include commentsInfo;
-    font-weight: 400;
-    color: $black;
-    padding-top: 12px;
-    padding-bottom: 17px;
+  @include commentsInfo;
+  font-weight: 400;
+  color: $black;
+  padding-top: 12px;
+  padding-bottom: 17px;
 }
 
 .comments__info--bottom {
-    padding-bottom: 9px;
+  padding-bottom: 9px;
 }
 
 .user br {
-    display: none;
+  display: none;
 }

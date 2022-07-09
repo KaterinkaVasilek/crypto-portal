@@ -1,84 +1,93 @@
 .intro {
+  position: relative;
+  background: $intro-background;
+
+  &__wrapper {
     position: relative;
-    background: $intro-background;
-    &__wrapper {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: 86px;
-        padding-bottom: 101px;
-    }
-    &__title {
-        font-weight: $font-weight600;
-        font-size: 4.25em; //70px;
-        line-height: $line-height85;
-        overflow-wrap: break-word;
-        background-image: $main-color;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-.intro__subtitle {
-    font-size: 2em; //33px;
-    font-weight: 600;
-    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 86px;
+    padding-bottom: 101px;
+  }
+
+  &__title {
+    font-weight: $font-weight600;
+    font-size: 4.25em; //70px;
+    line-height: $line-height85;
     overflow-wrap: break-word;
     background-image: $main-color;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
 }
+
+.intro__subtitle {
+  font-size: 2em; //33px;
+  font-weight: 600;
+  line-height: 25px;
+  overflow-wrap: break-word;
+  background-image: $main-color;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .intro__wrapper::after {
-    position: absolute;
-    content: '';
-    background: url(../../img/pics/intro.png) no-repeat;
-    width: 257px;
-    height: 280px;
-    top: 222px;
-    
+  position: absolute;
+  content: "";
+  background: url("../../img/pics/intro.png") no-repeat;
+  width: 257px;
+  height: 280px;
+  top: 222px;
 }
+
 .intro::after {
-    @include circlePseudoElement;
-    width: 15px;
-    height: 15px;
-    top: 31px;
-    right: 75px;
+  @include circlePseudoElement;
+  width: 15px;
+  height: 15px;
+  top: 31px;
+  right: 75px;
 }
+
 .intro::before {
-    @include circlePseudoElement;
-    width: 31px;
-    height: 31px;
-    top: 50px;
-    right: 24px;
+  @include circlePseudoElement;
+  width: 31px;
+  height: 31px;
+  top: 50px;
+  right: 24px;
 }
+
 .intro__text {
-    display: block;
-    overflow-wrap: break-word;
-    padding-top: 357px;
-    width: 247px;
-    font-weight: 400;
-    font-size: 0.9em; //14px;
-    line-height: 17px;
-    bottom: 188px;
-    color: $white;
-    &-color {
-        background: linear-gradient(98.66deg, #88A3E8 4.55%, #C8A1D6 109.18%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+  display: block;
+  overflow-wrap: break-word;
+  padding-top: 357px;
+  width: 247px;
+  font-weight: 400;
+  font-size: 0.9em; //14px;
+  line-height: 17px;
+  bottom: 188px;
+  color: $white;
+
+  &-color {
+    background: linear-gradient(98.66deg, #88a3e8 4.55%, #c8a1d6 109.18%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
+
 .social {
-    padding-top: 41px;
-    display: flex;
-    justify-content: space-between;
-    min-width: 161px;
-    list-style: none;
-    padding-left: 0;
+  padding-top: 41px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 161px;
+  list-style: none;
+  padding-left: 0;
 }
+
 .arrows {
-    width: 37px;
-    height: 41px;
-    position: absolute;
-    bottom: 38px;
+  width: 37px;
+  height: 41px;
+  position: absolute;
+  bottom: 38px;
 }

@@ -1,115 +1,150 @@
+.page {
+  padding: 39px 0 35px;
+}
+
 .company-card {
-    position: relative;
-    padding: 28px 12px 0 17px;
-    margin-top: 21px;
-    margin-bottom: 30px;
-    &__title {
-        @include cardTitle;
-    }
-    &__subtitle {
-        @include cardTitle;
-        font-size: 16px;
-    }
-    &__description {
-        font-weight: 400;
-        font-size: 11px;
-        line-height: 15px;
-        color: $grey-grey;
-        padding-bottom: 19px;
-        padding-top: 10px;
-    }
-    &__logo {
-        padding-left: 11px;
-        padding-bottom: 26px;
-    }
+  position: relative;
+  padding: 28px 12px 0 17px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    @include cardTitle;
+  }
+
+  &__subtitle {
+    @include cardTitle;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 0.7em;//11px;
+    line-height: 15px;
+    color: $grey-grey;
+    padding-bottom: 19px;
+    padding-top: 10px;
+  }
+
+  &__logo {
+    padding-bottom: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__btn {
+    padding-bottom: 35px;
+    width: 168px;
+    align-self: center;
+  }
+
+  &__screen {
+    padding-top: 30px;
+  }
 }
-.company-card::before {
-    position: absolute;
-    z-index: -1;
-    content: '';
-    background: url(../img/pics/Group54.svg) no-repeat;
-    width: 182px;
-    height: 187px;
-    top: 83px;
-    right: -115px;
+
+.content__wrapper-border {
+  padding-bottom: 21px;
+  margin-bottom: 25px;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
 }
+
+.company-card__logo-size {
+  display: none;
+}
+
+.company-card__screen-size {
+  display: none;
+}
+
 .company-card::after {
-    position: absolute;
-    z-index: -1;
-    content: '';
-    background: url(../img/pics/Group54.svg) no-repeat;
-    width: 182px;
-    height: 187px;
-    top: 649px;
-    left: -69px;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  background: url("../img/pics/Group54.svg") no-repeat;
+  width: 182px;
+  height: 187px;
+  top: 649px;
+  left: -69px;
 }
+
 .company-card .flex {
-    flex-direction: row;
-    padding-top: 9px;
-    width: 103px;
-    justify-content: space-around;
-}
-.company-card {
-    &__btn {
-        margin-left: 44px;
-        padding-bottom: 35px;
-    }
+  flex-direction: row;
+  padding-top: 9px;
+  width: 103px;
+  justify-content: space-around;
 }
 
 .company-card__about {
-    padding-top: 36px;
-    &-subtitle {
-        @include cardTitle;
-        font-size: 16px;
-    }
-    &-review {
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 13px;
-        color: $black;
-        padding-top: 10px;
-    }
+  padding-top: 36px;
+
+  &-subtitle {
+    @include cardTitle;
+    font-size: 1em; //16px;
+  }
+
+  &-review {
+    font-weight: 400;
+    font-size: 0.6em; //10px;
+    line-height: 13px;
+    color: $black;
+    padding-top: 10px;
+  }
 }
+
 .add-comment {
-    &__help {
-        font-weight: 500;
-        font-size: 11px;
-        line-height: 13px;
-        color: $color-grey;
-        padding-top: 10px;
-    }
-    &__form {
-        padding-top: 34px;
-    }
-    &__textarea {
-        border: 0;
-        border-bottom: 1px solid $grey;
-        height: 30px;
-    }
-}
-.add-comment__textarea::placeholder {
+  &__help {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    color: $grey;
+    font-size: 0.6em; //11px;
+    line-height: 13px;
+    color: $color-grey;
+    padding-top: 10px;
+  }
+
+  &__form {
+    padding-top: 34px;
+  }
+
+  &__textarea {
+    border: 0;
+    border-bottom: 1px solid $grey;
+    height: 30px;
+  }
 }
-.form__btn-margin {
-    margin-top: 20px;
-    margin-left: 15%;
-    padding: 10px 50px !important;
+
+.add-comment__textarea::placeholder {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: $grey;
+}
+
+.form__btn-submit {
+  @include btn-static;
+  border-radius: 22px;
+  margin-top: 20px;
+  margin-left: 15%;
+  padding: 10px 50px;
+  font-size: 0.7em;
 }
 
 .review {
-    &__list {
-        list-style-type: none;
-        padding-left: 0;
-    }
-    &__item {
-        padding-top: 26px;
-        padding-bottom: 10px;
-        @include commentsInfo;
-        font-weight: 400;
-        color: $black;
-        border-bottom: 1px solid $grey;
-    }
+  &__list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  &__item {
+    padding-top: 26px;
+    padding-bottom: 10px;
+
+    @include commentsInfo;
+    font-weight: 400;
+    color: $black;
+    border-bottom: 1px solid $grey;
+  }
 }

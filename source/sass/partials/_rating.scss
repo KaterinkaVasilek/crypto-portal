@@ -1,97 +1,108 @@
 .rating {
-    background-color: $white;
-    border-radius: 14px;
-    position: relative;
-    z-index: 2;
-    margin: 28px 16px 0;
-    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+  background-color: $white;
+  border-radius: 14px;
+  position: relative;
+  z-index: 2;
+  margin: 28px 16px 0;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+
+  &__link {
+    display: none;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 2em; //18px;
+    line-height: 59px;
+    color: $blue;
+    padding: 11px 27px 0 27px;
+    text-align: center;
+  }
 }
 
 .table {
-    border: 2px solid transparent;
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 11px;
+  border: 2px solid transparent;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
 }
 
 .table__names {
-    background-color: $light-grey;
-    font-weight: 400;
-    font-size: 11px;
-    text-align: center;
-    line-height: 13px;
-    color: $dark-grey;
+  background-color: $light-grey;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+  line-height: 13px;
+  color: $dark-grey;
 }
 
 td img {
-    display: inherit;
+  display: inherit;
 }
 
 thead {
-    width: 100%;
-    height: 7em;
+  width: 100%;
+  height: 7em;
 }
 
 .table__thead-title {
-    word-break: break-all;
-    font-weight: 400;
-    font-size: 1em; //11px;
-    line-height: 13px;
-    color: $dark-grey;
-    text-align: center;
-    background-color: $light-grey;
-}
-.big {
-    display: none;
-}
-.short {
-    display: inherit;
-}
-.desktop {
-    display: none;
-}
-.rating__link {
-    display: none;
-}
-.rating__title {
-    font-weight: 600;
-    font-size: 1.1em; //18px;
-    line-height: 59px;
-    color: blue;
-    padding: 11px 27px 0 27px;
-    text-align: center;
+  word-break: break-all;
+  font-weight: 400;
+  width: 22%;
+  font-size: 1em; //11px;
+  line-height: 13px;
+  color: $dark-grey;
+  text-align: center;
+  background-color: $light-grey;
 }
 
-td, th {
-    border: 0.16px solid $grey-grey;
-    text-align: center;
+.big {
+  display: none;
+}
+
+.short {
+  display: inherit;
+}
+
+.desktop {
+  display: none;
+}
+
+td,
+th {
+  border: 0.16px solid $grey-grey;
+  text-align: center;
 }
 
 td a {
-    text-decoration: underline;
-    font-weight: 500;
-    font-size: 1em; //11px;
-    line-height: 13px;
-    color: blue;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 1em; //11px;
+  line-height: 13px;
+  color: $blue;
 }
+
 .amount {
-    @include tableFont;
-    color: $green;
-    padding-top: 29px;
-    padding-bottom: 22px;
+  @include tableFont;
+  color: $green;
+  padding-top: 29px;
+  padding-bottom: 22px;
 }
+
 .reviews {
-    @include tableFont;
-    color: $blue;
+  @include tableFont;
+  color: $blue;
 }
+
 .table__logo {
-    padding-left: 1%;
+  padding-left: 1%;
 }
 
 .td-padding {
-    padding-right: 10px;
-    padding-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
+
 .svg-none {
-    display: none;
+  display: none;
 }

@@ -1,58 +1,68 @@
 .form {
-    padding: 71px 18px 51px 25px;
-    position: relative;
-    &__title {
-        @include titleStyle;
-    }
-    &__info {
-        @include commentsInfo;
-    }
-    &__label {
-        font-weight: 600;
-        font-size: 0.6em; //10px;
-        line-height: 12px;
-        color: $dark-grey;
-        align-self: flex-start;
-        padding-left: 7px;
-        padding-bottom: 6px;
-    }
-    &__area {
-        padding-top: 12px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .form__btn {
-        font-weight: 500;
-        font-size: 0.7em; //11px;
-        line-height: 13px;
-        @include btn-static;
-        padding: 10.5px 20px;
-        border-radius: 21px;
-        margin-right: 6px;
-    }
+  padding: 71px 18px 51px 25px;
+  position: relative;
+
+  &__title {
+    @include titleStyle;
+  }
+
+  &__info {
+    @include commentsInfo;
+  }
+
+  &__label {
+    font-weight: 600;
+    font-size: 0.6em; //10px;
+    line-height: 12px;
+    color: $dark-grey;
+    align-self: flex-start;
+    padding-left: 7px;
+    padding-bottom: 6px;
+  }
+
+  &__area {
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__btn {
+    font-weight: 500;
+    font-size: 0.7em; //11px;
+    line-height: 13px;
+
+    @include btn-static;
+    padding: 10.5px 20px;
+    border-radius: 21px;
+    margin-right: 6px;
+  }
 }
+
 .form__info-bottom {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
+
 .form__input {
-    @include input;
+  @include input;
 }
+
 .form__textarea {
-    @include input;
-    min-height: 173px;
+  @include input;
+  min-height: 173px;
 }
 
 .form__btn:hover {
-    @include btn-hover;
+  @include btn-hover;
 }
+
 .form::after {
-    position: absolute;
-    z-index: -1;
-    content: '';
-    background: url(../img/pics/Group54.svg) no-repeat;
-    width: 182px;
-    height: 187px;
-    top: 335px;
-    right: -100px;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  background: url("../img/pics/Group54.svg") no-repeat;
+  width: 104px;
+  height: 187px;
+  top: 335px;
+  right: -22px;
 }
