@@ -36,6 +36,18 @@
   color: $dark-grey;
 }
 
+.col-stars {
+  width: 70px;
+}
+
+.col-currency {
+  width: 63px;
+}
+
+.col-site {
+  width: 40px;
+}
+
 td img {
   display: inherit;
 }
@@ -59,7 +71,7 @@ thead {
 }
 
 .short {
-  display: inherit;
+  display: block;
 }
 
 .desktop {
