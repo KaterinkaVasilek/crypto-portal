@@ -248,8 +248,10 @@ body {
     &__title {
       font-size: 1.5em;
     }
+
     &__item-heading {
       font-size: 1em;
+      padding-bottom: 10px;
     }
   }
   //choice
@@ -352,11 +354,6 @@ body {
     &__text {
       font-size: 12px;
     }
-  }
-  //privacy
-  .privacy__item-heading {
-    font-size: 13px;
-    padding-bottom: 10px;
   }
 
   .privacy__policy-text {
@@ -660,7 +657,7 @@ body {
 
   .table__thead-title {
     width: 22%;
-    font-size: 14px;
+    font-size: 1.5em;
     line-height: 17px;
   }
 
@@ -678,10 +675,6 @@ body {
 
   .desktop {
     display: none;
-  }
-
-  .big {
-    display: inherit;
   }
 
   .short {
