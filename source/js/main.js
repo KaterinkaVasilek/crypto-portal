@@ -1,5 +1,6 @@
 'use strict';
 
+//burger-menu
 let toggleButton = document.querySelector(".toggle-menu"), 
 navBar = document.querySelector(".nav__bar"); 
 
@@ -11,26 +12,12 @@ burgerBtn.addEventListener('click', function(){
 list.classList.toggle('active');
 })
 
-function trackScroll() {
-    let scrolled = window.pageYOffset;
-    let coords = document.documentElement.clientHeight;
+//Scroll to top
+arrowTop.onclick = function() {
+    window.scrollTo(pageXOffset, 0);
+};
 
-    if (scrolled > coords) {
-        arrowUp.classList.add('up__btn');
-    }
-    if (scrolled < coords) {
-        arrowUp.classList.remove('up__btn');
-    }
-}
+window.addEventListener('scroll', function() {
+    arrowTop.hidden = (pageYOffset < document.documentElement.clientHeight);
+});
 
-function backToTop() {
-    if (window.pageYOffset > 0) {
-        window.scrollBy(0, -80);
-        setTimeout(backToTop, 0);
-    }
-}
-
-let arrowUp = document.querySelector('.up');
-
-window.addEventListener('scroll', trackScroll);
-arrowUp.addEventListener('click', backToTop);

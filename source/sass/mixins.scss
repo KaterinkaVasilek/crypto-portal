@@ -97,7 +97,6 @@
 
 @mixin selectHover {
   border: 1px solid $white;
-  filter: drop-shadow(0 0 13px $white);
 }
 
 @mixin selectFocus {

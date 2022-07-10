@@ -20,7 +20,7 @@
 }
 
 .toggle-menu {
-  background-color: #32439d;
+  background-color: $blue;
   top: 9px;
   right: 20px;
   width: 44px;
@@ -38,12 +38,12 @@
   height: 2px;
   margin-left: 25%;
   border-radius: 3px;
-  background-color: #ffffff;
+  background-color: $white;
   transition: transform 0.2s ease-out;
 }
 
 .toggle .line1 {
-  background-color: #000000;
+  background-color: $black;
   transform: scale(0.9) rotateZ(-45deg) translate(-5px, 4px);
 }
 
@@ -52,7 +52,7 @@
 }
 
 .toggle .line3 {
-  background-color: #000000;
+  background-color: $black;
   transform: scale(0.9) rotateZ(45deg) translate(-5px, -4px);
 }
 

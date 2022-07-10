@@ -24,10 +24,6 @@ body {
   font-family: $main-font;
 }
 
-.up {
-  display: none;
-}
-
 .main {
   min-width: 320px;
   background-color: $background-color;
@@ -115,9 +111,6 @@ body {
     display: block;
   }
 
-  .up {
-    display: none;
-  }
   //intro
   .intro {
     padding-top: 50px;
@@ -247,6 +240,16 @@ body {
 
     .review__item {
       font-size: 0.7em;
+    }
+  }
+
+  //privacy-policy
+  .privacy {
+    &__title {
+      font-size: 1.5em;
+    }
+    &__item-heading {
+      font-size: 1em;
     }
   }
   //choice
@@ -415,6 +418,16 @@ body {
 }
 
 @media (min-width: $desktop-width) {
+  .up {
+    position: fixed;
+    cursor: pointer;
+    bottom: 46px;
+    right: 58px;
+    z-index: 999;
+    width: 55px;
+    height: 55px;
+  }
+
   .main {
     max-width: 100%;
   }
@@ -427,18 +440,6 @@ body {
   .content {
     max-width: 1440px;
     margin: 0 auto;
-  }
-
-  .up {
-    position: fixed;
-    bottom: 46px;
-    right: 58px;
-    z-index: 999;
-    display: none;
-  }
-
-  .up__btn {
-    display: block;
   }
 
   .content__wrapper {
@@ -855,7 +856,6 @@ body {
     padding: 8px 28px;
     font-size: 16px;
     line-height: 20px;
-    margin-top: 14px;
   }
 
   .btn:not(:last-child) {
