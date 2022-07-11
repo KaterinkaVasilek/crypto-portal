@@ -659,6 +659,10 @@ body {
     }
   }
 
+  .flex a:not(:last-child) {
+    margin-bottom: 0;
+  }
+
   .company-card__logo-size {
     left: 675px;
   }
