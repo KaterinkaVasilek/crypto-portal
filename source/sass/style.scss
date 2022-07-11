@@ -292,6 +292,10 @@ body {
       padding-bottom: 10px;
     }
   }
+
+  .content__wrapper-privacy {
+    margin-top: 110px;
+  }
   //choice
   .choice {
     &__title {
@@ -666,6 +670,13 @@ body {
   .company-card__logo-size {
     left: 675px;
   }
+
+  //privacy-policy
+  .content__wrapper-privacy {
+    margin-top: 110px;
+    margin-bottom: 30px;
+  }
+
   //header
   .header__logo {
     padding-right: 0;
