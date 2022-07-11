@@ -91,10 +91,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-// .exchanges__select:hover {
-//   @include selectHover;
-// }
-
 .rates__select:focus {
   @include selectFocus;
 }
@@ -104,8 +100,8 @@
 }
 
 .blog {
-  padding-top: 48px;
   padding-left: 0;
+  margin-top: 0;
   list-style-type: none;
 
   &__item {

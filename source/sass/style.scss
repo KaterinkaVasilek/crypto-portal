@@ -60,10 +60,6 @@ body {
   }
 }
 
-.content-bottom {
-  padding-bottom: 30px;
-}
-
 @media (min-width: 500px) {
   .company-card__logo,
   .company-card__screen {
@@ -73,11 +69,13 @@ body {
   .company-card__logo-size {
     display: block;
     padding-bottom: 20px;
+    align-self: center;
   }
 
   .company-card__screen-size {
     display: block;
     padding-top: 30px;
+    align-self: center;
   }
 
   .short {
@@ -231,7 +229,7 @@ body {
   }
   //company-card
   .content__wrapper-border {
-    margin: 100px 36px 0;
+    margin-top: 70px;
   }
 
   .company-card {
@@ -464,9 +462,15 @@ body {
     padding-right: 470px;
   }
 
+  .company-card__screen-size {
+    width: 650px;
+    height: 400px;
+  }
+
   .company-card__logo-size {
     position: absolute;
     width: 475px;
+    height: 130px;
     right: 0;
   }
 

@@ -36,6 +36,10 @@
   color: $dark-grey;
 }
 
+.desktop-col-name {
+  display: none;
+}
+
 .col-stars {
   width: 70px;
 }
@@ -71,7 +75,7 @@ thead {
 }
 
 .short {
-  display: block;
+  display: initial;
 }
 
 .desktop {

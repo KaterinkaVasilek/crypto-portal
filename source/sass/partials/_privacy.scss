@@ -1,5 +1,8 @@
-.content__wrapper-border {
-  margin: 25px 25px;
+.content__wrapper-privacy {
+  padding-bottom: 21px;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  margin: 20px 36px;
 }
 
 .privacy {
@@ -23,6 +26,14 @@
     padding-left: 13px;
     padding-top: 16px;
   }
+}
+
+.company-card__logo {
+  align-self: center;
+}
+
+.company-card__screen {
+  align-self: center;
 }
 
 .privacy__item-heading,

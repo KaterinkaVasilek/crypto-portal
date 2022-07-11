@@ -41,6 +41,10 @@
     align-self: center;
   }
 
+  .company-card__btn:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
   &__screen {
     padding-top: 30px;
   }
