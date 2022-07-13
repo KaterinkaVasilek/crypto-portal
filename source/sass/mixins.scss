@@ -19,7 +19,7 @@
 
 @mixin titleStyle {
   font-weight: 600;
-  font-size: 0.9em; //14px;
+  font-size: 14px;
   line-height: 17px;
   color: $blue;
   padding-bottom: 11px;
@@ -55,8 +55,8 @@
 }
 
 @mixin darkBlocks {
-  margin-left: -37px;
-  margin-right: -25px;
+  margin-left: -36px;
+  margin-right: -29px;
   background: $hard-dark-blue;
   box-shadow: $box-shadow;
   border-radius: 28px;
@@ -65,7 +65,7 @@
 
 @mixin cardFontStyle {
   font-weight: 600;
-  font-size: 0.75em; //12px;
+  font-size: 12px;
   line-height: 130%;
   color: $white;
 }
@@ -80,7 +80,7 @@
 
 @mixin select {
   font-weight: 500;
-  font-size: 0.7em; //12px;
+  font-size: 12px;
   line-height: 15px;
   color: $white;
   padding: 8px 0 8px 30px;
@@ -97,9 +97,10 @@
 }
 
 @mixin selectFocus {
+  box-shadow: 0 0 13px 0 rgba(255, 255, 255, 0.58);
+  box-shadow: 0 0 13px 0 rgba(255, 255, 255, 0.58);
+  box-shadow: 0 0 13px 0 rgba(255, 255, 255, 0.58);
   border: 1px solid $white;
-  filter: drop-shadow(0 0 13px $white);
-  color: $white;
   outline: none;
 }
 
@@ -118,7 +119,7 @@
 
 @mixin footerTitles {
   font-weight: 600;
-  font-size: 0.9em; //14px;
+  font-size: 14px;
   line-height: 17px;
   color: $white;
 }
@@ -135,6 +136,13 @@
   background-color: $blue;
   border: 1px solid $blue;
   cursor: pointer;
+}
+
+@mixin mobAboutFonts {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: $black;
 }
 
 @mixin btn-hover {

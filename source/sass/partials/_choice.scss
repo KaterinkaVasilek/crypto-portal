@@ -4,6 +4,7 @@
 
 .choice {
   padding-bottom: 42px;
+  padding-right: 1px;
 
   &__title {
     font-weight: 600;
@@ -50,9 +51,9 @@
   padding-bottom: 8px;
 }
 
-.flex a:not(:last-child) {
-  margin-bottom: 15px;
-}
+// .flex a:not(:last-child) {
+//   margin-bottom: 15px;
+// }
 
 .choice__text-top:first-child {
   padding-top: 17px;

@@ -3,7 +3,6 @@
   list-style-type: none;
   margin: 0;
   padding-left: 0;
-  padding-right: 10px;
   padding-bottom: 48px;
   position: relative;
 
@@ -14,18 +13,30 @@
 
   &__title {
     font-weight: 600;
-    font-size: 1.3em; //20px;
+    font-size: 20px;
     line-height: 24px;
     color: $blue;
-    padding-bottom: 11px;
+    padding-bottom: 14px;
   }
 
   &__text {
-    font-weight: 400;
-    font-size: 0.6em; //10px;
-    line-height: 12px;
-    color: $black;
+    @include mobAboutFonts;
   }
+
+  &__list {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+}
+
+.about__list-title {
+  @include mobAboutFonts;
+  padding-bottom: 9px;
+}
+
+.about__list-item {
+  @include mobAboutFonts;
 }
 
 .about::after {
@@ -35,7 +46,7 @@
 }
 
 .about__item:not(:last-child) {
-  padding-bottom: 99px;
+  padding-bottom: 95px;
 }
 
 .about__item::after {
@@ -58,7 +69,7 @@
 }
 
 .about__item p:last-of-type {
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 
 .btn {
@@ -66,9 +77,10 @@
   padding: 8px 33px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.7em; //11px;
+  font-size: 11px;
   line-height: 13px;
   border-radius: 21px;
+  width: 168px;
 
   &-size {
     width: 168px;
@@ -89,5 +101,5 @@
 
 .flex a:not(:last-child) {
   margin-bottom: 15px;
-  margin-top: 24px;
+  margin-top: 29px;
 }

@@ -1,12 +1,12 @@
 .comments {
-  padding-bottom: 71px;
+  padding-bottom: 68px;
 
   &__title {
     @include titleStyle;
   }
 
   &__heading {
-    padding-bottom: 18px;
+    padding-bottom: 20px;
   }
 }
 
@@ -24,9 +24,13 @@
   }
 }
 
+.hidden {
+  display: none;
+}
+
 .comments__item:not(:first-child) {
-  padding-top: 34px;
-  padding-bottom: 9px;
+  padding-top: 37px;
+  padding-bottom: 2px;
 }
 
 .comments__info {

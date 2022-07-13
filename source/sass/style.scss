@@ -57,7 +57,7 @@ body {
     background-color: $white;
     border-bottom-left-radius: 28px;
     border-bottom-right-radius: 28px;
-    padding: 36px 19px 0 26px;
+    padding: 36px 18px 0 26px;
   }
 }
 
@@ -259,7 +259,13 @@ body {
 
     &__text {
       font-size: 12px;
+      line-height: 12px;
     }
+  }
+
+  .about__list-title,
+  .about__list-item {
+    font-size: 12px;
   }
 
   .short {
@@ -481,10 +487,6 @@ body {
         &:not(:last-child) {
           margin-bottom: 8px;
         }
-
-        &:hover {
-          @include selectHover;
-        }
       }
     }
 
@@ -516,7 +518,7 @@ body {
 
 @media (min-width: 1000px) {
   .rate {
-    min-width: 1043px;
+    min-width: 973px;
     max-width: 1309px;
   }
 
@@ -569,6 +571,10 @@ body {
     }
   }
 
+  .hidden {
+    display: block;
+  }
+
   .comments ul {
     padding-top: 25px;
   }
@@ -588,6 +594,12 @@ body {
   }
 
   .about__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .about__list-title,
+  .about__list-item {
     font-size: 14px;
     line-height: 16px;
   }
@@ -620,6 +632,10 @@ body {
     display: none;
   }
 
+  .footer__wrapper-item:hover {
+    @include selectFocus;
+  }
+
   .footer__wrapper-desktop {
     display: block;
     margin: 0 auto;
@@ -636,7 +652,6 @@ body {
   }
 
   .footer__wrapper-ol {
-    // padding-left: 20px;
     list-style-position: inside;
     padding-left: 0;
 
@@ -1467,6 +1482,14 @@ body {
     padding-bottom: 111px;
   }
 
+  .about__list {
+    padding-right: 496px;
+
+    &-title {
+      padding-bottom: 15px;
+    }
+  }
+
   .flex {
     flex-direction: row;
     align-items: center;
@@ -1477,6 +1500,7 @@ body {
     padding: 8px 28px;
     font-size: 16px;
     line-height: 20px;
+    width: 199px;
   }
 
   .btn:not(:last-child) {
@@ -1696,7 +1720,7 @@ body {
     }
 
     &__description {
-      text-align: center;
+      text-align: start;
     }
 
     &__news {
