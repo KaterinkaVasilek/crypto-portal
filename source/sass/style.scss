@@ -515,10 +515,9 @@ body {
 }
 
 @media (min-width: 1000px) {
-  .rate table {
+  .rate {
+    min-width: 1043px;
     max-width: 1309px;
-    // left: 0;
-    // right: 0;
   }
 
   .company-card {
@@ -1143,10 +1142,14 @@ body {
   .rate {
     position: absolute;
     z-index: 2;
+    min-width: 1309px;
+    max-width: 1309px;
     background-color: $white;
     border-radius: 34px;
     box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
     top: -89px;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 
   thead {
@@ -1283,7 +1286,7 @@ body {
     }
 
     &__info {
-      font-size: 16px;
+      font-size: 14px;
       line-height: 20px;
       margin-top: -7px;
     }
@@ -1483,6 +1486,10 @@ body {
     right: 466px;
     top: -90px;
     color: rgba(50, 67, 157, 0.05);
+  }
+
+  .about__item:nth-child(odd)::after {
+    right: 827px;
   }
 
   .about::after {
@@ -1703,8 +1710,7 @@ body {
   }
 
   .copyright {
-    padding-top: 27px;
-    padding-bottom: 20px;
+    padding: 27px 201px 20px;
   }
 
   .social__item {
