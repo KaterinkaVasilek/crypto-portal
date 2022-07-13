@@ -740,6 +740,12 @@ body {
 }
 
 @media (min-width: $desktop-width) {
+  .header__wrapper {
+    min-width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
   .up {
     position: fixed;
     cursor: pointer;
@@ -870,6 +876,8 @@ body {
       left: -163px;
       bottom: -79px;
       padding: 10px 35px;
+      font-size: 16px;
+      line-height: 20px;
     }
   }
 
