@@ -149,6 +149,10 @@
   line-height: 13px;
 }
 
+.add-comment__btn:hover {
+  @include btn-hover;
+}
+
 .review {
   border-radius: 16px;
   padding: 35px 45px 57px 20px;
