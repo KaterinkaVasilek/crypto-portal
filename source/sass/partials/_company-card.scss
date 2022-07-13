@@ -52,9 +52,9 @@
   }
 }
 
-  .company-card__btn:not(:last-child) {
-    margin-bottom: 15px;
-  }
+.company-card__btn:not(:last-child) {
+  margin-bottom: 15px;
+}
 
 .content__wrapper-border {
   background-color: $white;
@@ -121,6 +121,7 @@
 
   &__form {
     padding-top: 34px;
+    position: relative;
   }
 
   &__textarea {
@@ -137,18 +138,18 @@
   color: $grey;
 }
 
-.form__btn-submit {
+.add-comment__btn {
   @include btn-static;
   border-radius: 22px;
   margin-top: 20px;
   margin-left: 15%;
   padding: 10px 50px;
-  font-size: 0.7em;
 }
 
 .review {
   border-radius: 16px;
   padding: 35px 45px 57px 20px;
+
   &__list {
     list-style-type: none;
     padding-left: 0;
@@ -167,4 +168,8 @@
     color: $black;
     border-bottom: 1px solid $grey;
   }
+}
+
+.review__item-none {
+  display: none;
 }

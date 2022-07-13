@@ -2,8 +2,8 @@
   background-color: $very-dark-blue;
 
   &__wrapper {
-    padding: 33px 26px 
-    6px;
+    padding: 33px 26px
+      6px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -33,6 +33,7 @@
 
   &__social {
     width: 157px;
+    padding-top: 10px;
   }
 }
 
@@ -42,7 +43,7 @@
   width: 201px;
   height: 56px;
   top: 55%;
-  left: 0;
+  left: 27px;
   background: url("../img/pics/main-logo.png") no-repeat;
 }
 
@@ -75,10 +76,6 @@
   right: 3%;
 }
 
-.footer__social {
-  padding-top: 10px;
-}
-
 .rates__select,
 .exchanges__select {
   @include select;
@@ -107,9 +104,14 @@
 }
 
 .blog {
-  padding-left: 0;
-  margin-top: 0;
   list-style-type: none;
+  padding-left: 0;
+
+  &__list {
+    padding-left: 0;
+    margin-top: 0;
+    list-style-type: none;
+  }
 
   &__item {
     border-left: 1px solid $light-black;

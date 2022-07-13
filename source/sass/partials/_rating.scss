@@ -21,6 +21,7 @@
   width: 100%;
   border-collapse: collapse;
   font-size: 11px;
+
   &__link {
     display: none;
   }
@@ -109,7 +110,7 @@ thead {
 
 td,
 th {
-  border: 0.162491px solid rgba(200, 200, 200, 0.6);
+  border: 0.16px solid rgba(200, 200, 200, 0.6);
   text-align: center;
 }
 
@@ -136,8 +137,4 @@ td a {
 .td-padding {
   padding-right: 10px;
   padding-left: 10px;
-}
-
-.svg-none {
-  display: none;
 }

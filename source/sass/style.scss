@@ -65,7 +65,7 @@ body {
   .container {
     margin: 0 42px;
   }
-  
+
   .company-card__logo,
   .company-card__screen {
     display: none;
@@ -208,9 +208,9 @@ body {
     display: inherit;
   }
 
-  .col-name {
-    width: 235px;
-  }
+  // .col-name {
+  //   width: 235px;
+  // }
 
   .col-stars {
     width: 170px;
@@ -224,6 +224,7 @@ body {
     padding-left: 0;
     padding-right: 0;
   }
+
   .svg-yellow {
     width: 28px;
     height: 30px;
@@ -301,29 +302,39 @@ body {
     .btn:hover {
       @include btn-hover;
     }
+  }
 
-    .company-card__about {
-      &-subtitle {
-        font-size: 18px;
-      }
-
-      &-review {
-        font-size: 0.7em;
-      }
+  .company-card__about {
+    &-subtitle {
+      font-size: 18px;
     }
 
-    .add-comment {
-      padding-left: 30px;
-      padding-right: 30px;
+    &-review {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
 
-      &__textarea {
-        width: 45%;
-      }
+  .add-comment {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &__form {
+      padding-top: 47px;
     }
 
-    .review__item {
-      font-size: 0.7em;
+    &__textarea {
+      width: 100%;
     }
+  }
+
+  .add-comment__textarea::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .review__item {
+    font-size: 0.7em;
   }
 
   //privacy-policy
@@ -390,11 +401,6 @@ body {
     }
   }
 
-  .form::before {
-    right: -112px;
-    z-index: -1;
-  }
-
   .form__input {
     min-height: 35px;
     align-self: flex-start;
@@ -418,6 +424,7 @@ body {
     height: 187px;
     top: 14px;
     right: -112px;
+    z-index: -1;
   }
   //description
   .description {
@@ -508,9 +515,11 @@ body {
 }
 
 @media (min-width: 1000px) {
-.rate {
-  max-width: 1309px;
-}
+  .rate table {
+    max-width: 1309px;
+    // left: 0;
+    // right: 0;
+  }
 
   .company-card {
     position: relative;
@@ -538,23 +547,70 @@ body {
     padding-left: 6%;
   }
 
-  .comments__heading {
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid #f2f2f2;
-    padding-bottom: 10px;
+  .choice__text {
+    font-size: 14px;
+  }
+
+  .comments {
+    &__heading {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #f2f2f2;
+      padding-bottom: 10px;
+    }
+
+    &__info {
+      padding-left: 0;
+      font-size: 12px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 
   .comments ul {
     padding-top: 25px;
   }
 
-  .comments__info {
-    padding-left: 0;
+  .comments__stars .svg-grey,
+  .comments__stars .svg-white {
+    width: 20px;
+    height: 20px;
   }
 
   .comment__info-padding {
     padding-left: 45px;
+  }
+
+  .description__text {
+    font-size: 14px;
+  }
+
+  .about__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .card {
+    &__title {
+      font-size: 14px;
+    }
+  }
+
+  .review__list {
+    max-height: 250px;
+    overflow: scroll;
+  }
+
+  .review__item-none {
+    display: block;
+  }
+
+  .info__text {
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .social {
@@ -581,12 +637,14 @@ body {
   }
 
   .footer__wrapper-ol {
-    padding-left: 20px;
+    // padding-left: 20px;
+    list-style-position: inside;
+    padding-left: 0;
 
     &-title {
       @include footerTitleDescktop;
       padding-bottom: 10px;
-      margin-left: -12px;
+      margin-left: 0;
     }
   }
 
@@ -615,6 +673,10 @@ body {
 
   .font {
     font-size: 1.2em;
+  }
+
+  .blog__title {
+    font-size: 1em;
   }
 
   .footer__wrapper-desktop-description {
@@ -712,44 +774,201 @@ body {
   .page {
     max-width: 1440px;
     margin: 0 auto;
+    position: relative;
+    z-index: 0;
   }
 
   .company-card {
-    padding: 35px 80px 20px;
+    padding: 35px 104px 20px;
 
     &__title {
-      font-size: 1.8em;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
     }
 
     &-flex {
-      padding-right: 680px;
+      padding-right: 536px;
+      padding-bottom: 11px;
     }
 
     &__description {
-      font-size: 0.9em;
+      font-size: 14px;
+      line-height: 17px;
     }
 
     &__buttons {
       flex-direction: row;
+      margin-left: 0;
     }
 
     &__btn {
       width: 200px;
     }
+
+    &__logo-size {
+      width: 533px;
+      height: 147px;
+      top: 68px;
+      left: 712px;
+    }
+  }
+
+  .company-card__screen-size {
+    padding-top: 69px;
+    width: 1110px;
+    height: 625px;
+  }
+
+  .company-card__btn:not(:last-child) {
+    margin-bottom: 0;
   }
 
   .flex a:not(:last-child) {
-    margin-bottom: 15px;
+    margin: 0 54px 0 0;
   }
 
-  .company-card__logo-size {
-    left: 675px;
+  .company-card .flex {
+    width: 166px;
   }
 
+  .company-card__about:not(:first-child) {
+    padding-top: 65px;
+    margin-bottom: -11px;
+    padding-right: 35px;
+  }
+
+  .company-card__about-subtitle {
+    padding-bottom: 18px;
+    font-size: 26px;
+  }
+
+  .company-card .company-card__about {
+    &-subtitle {
+      font-size: 26px;
+    }
+  }
+
+  .company-card::after {
+    background-size: cover;
+    width: 238px;
+    height: 235px;
+    top: 807px;
+    left: 1140px;
+  }
+
+  .page .add-comment {
+    margin-top: 56px;
+    padding-bottom: 120px;
+
+    &__help {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__btn {
+      position: absolute;
+      left: -163px;
+      bottom: -79px;
+      padding: 10px 35px;
+    }
+  }
+
+  .review {
+    position: relative;
+    padding: 51px 35px 57px 107px;
+
+    &__item {
+      padding-top: 46px;
+      padding-bottom: 22px;
+      width: 1112px;
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      word-break: break-word;
+      width: 926px;
+    }
+
+    &__list {
+      max-height: 525px;
+    }
+  }
+
+  .review__list::-webkit-scrollbar {
+    border: 1px solid $grey;
+    width: 9px;
+  }
+
+  .review__list::-webkit-scrollbar-track {
+    background: $white;
+  }
+
+  .review__list::-webkit-scrollbar-thumb {
+    background: #dbe1f2;
+    border-radius: 17px;
+  }
+
+  .page .review {
+    margin-top: 56px;
+    padding-bottom: 67px;
+    margin-bottom: 78px;
+  }
+
+  .review::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    background: url("../img/pics/Group55.svg") no-repeat;
+    background-size: cover;
+    width: 382px;
+    height: 318px;
+    left: -186px;
+    top: -312px;
+  }
   //privacy-policy
   .content__wrapper-privacy {
-    margin-top: 110px;
-    margin-bottom: 30px;
+    margin: 128px 57px 101px;
+  }
+
+  .privacy {
+    padding: 84px 69px 54px 81px;
+
+    &__title {
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 51px;
+      margin-bottom: 0;
+    }
+
+    &__item-heading {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      padding-bottom: 21px;
+    }
+
+    &__policy-text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__list {
+      padding-right: 10px;
+      padding-left: 0;
+    }
+
+    &__item {
+      padding-top: 50px;
+      padding-bottom: 0;
+    }
+  }
+
+  .privacy__item:not(:first-child) {
+    padding-top: 20px;
   }
 
   //header
@@ -902,29 +1121,32 @@ body {
   }
 
   .content__wrapper-border {
-    margin: 100px 36px 0;
+    margin: 100px 57px 0;
+    padding-bottom: 52px;
   }
+
   //rating
   .rating {
     position: relative;
+    z-index: 2;
     margin: 0 auto;
+
     &__title {
       font-weight: 600;
       font-size: 26px;
       text-align: inherit;
       line-height: 32px;
       padding: 29px 0 27px 66px;
+    }
   }
-}
 
   .rate {
     position: absolute;
+    z-index: 2;
     background-color: $white;
     border-radius: 34px;
     box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
     top: -89px;
-    left: 4%;
-    width: 1309px;
   }
 
   thead {
@@ -1012,7 +1234,7 @@ body {
   .choice {
     padding-right: 44px;
     padding-bottom: 104px;
-    
+
     &__title {
       font-size: 1.6em;
       line-height: 32px;
@@ -1034,9 +1256,11 @@ body {
       line-height: 20px;
       font-weight: 400;
       padding-bottom: 27px;
+
       &-heading {
         padding-bottom: 13px;
       }
+
       &-bottom {
         padding-bottom: 15px;
       }
@@ -1053,6 +1277,7 @@ body {
   //comments
   .comments {
     padding-bottom: 104px;
+
     &__title {
       @include fontTitle;
     }
@@ -1070,17 +1295,27 @@ body {
     }
 
     &__stars {
-      padding-left: 103px;
+      padding-left: 185px;
+      margin-top: -37px;
     }
+
+    &__item {
+      margin-bottom: 10px;
+    }
+  }
+
+  .comments__text:not(:first-child) {
+    padding-top: 23px;
   }
 
   .user {
     font-style: normal;
     padding-left: 0;
+    padding-bottom: 10px;
   }
 
   .comments__item-heading {
-    display: flex;
+    display: block;
     padding-top: 3px;
   }
 
@@ -1146,7 +1381,7 @@ body {
     margin-right: 3px;
   }
 
-  .desktop__btn {
+  .form .form__btn {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -1237,7 +1472,7 @@ body {
     margin-right: 55px;
   }
 
-  .about__item::after{
+  .about__item::after {
     counter-increment: numbers;
     content: counter(numbers);
     font-weight: 600;
@@ -1271,10 +1506,6 @@ body {
 
   .about__item p:last-of-type {
     padding-bottom: 31px;
-}
-
-  .flex a:not(:last-child) {
-    margin: 0 54px 0 0;
   }
 
   .btn-size {
@@ -1373,7 +1604,7 @@ body {
     @include circlePseudoElement;
     width: 157px;
     height: 119px;
-    background: url(../img/pics/Rectangle555.svg)no-repeat;
+    background: url("../img/pics/Rectangle555.svg") no-repeat;
     bottom: 59px;
     right: 62px;
     background-size: contain;
@@ -1411,6 +1642,7 @@ body {
   .info {
     padding-top: 57px;
     padding-bottom: 67px;
+
     &__title {
       font-size: 28px;
       line-height: 34px;
@@ -1434,8 +1666,13 @@ body {
       display: none;
       justify-content: space-around;
       padding-bottom: 0;
+
       &-el {
-        margin-left: -214px;
+        margin-left: -159px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
       }
     }
 
@@ -1450,6 +1687,10 @@ body {
     &__news {
       margin-left: 13%;
     }
+  }
+
+  .blog__title {
+    font-size: 20px;
   }
 
   .footer__wrapper::after {
@@ -1475,9 +1716,11 @@ body {
       padding: 44px 118px;
     }
   }
+
   .footer__wrapper-ul,
   .footer__wrapper-ol {
     margin: 0;
+
     &-title {
       font-weight: 600;
       font-size: 20px;
@@ -1487,6 +1730,7 @@ body {
 
   .footer__wrapper-ol {
     padding-left: 7px;
+
     &-item {
       font-weight: 500;
       font-size: 14px;
@@ -1505,5 +1749,10 @@ body {
     line-height: 17px;
     padding-left: 9px;
     width: 414px;
+  }
+
+  .footer__wrapper-desktop-description {
+    font-size: 14px;
+    width: 311px;
   }
 }
