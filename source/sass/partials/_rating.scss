@@ -6,13 +6,9 @@
   margin: 28px 16px 0;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
 
-  &__link {
-    display: none;
-  }
-
   &__title {
     font-weight: 600;
-    font-size: 2em; //18px;
+    font-size: 18px;
     line-height: 59px;
     color: $blue;
     padding: 11px 27px 0 27px;
@@ -25,6 +21,9 @@
   width: 100%;
   border-collapse: collapse;
   font-size: 11px;
+  &__link {
+    display: none;
+  }
 }
 
 .table__names {
@@ -40,20 +39,28 @@
   display: none;
 }
 
+.col-name {
+  width: 53px;
+}
+
 .col-stars {
-  width: 70px;
+  width: 76px;
 }
 
 .col-currency {
-  width: 63px;
+  width: 45px;
+}
+
+.col-view {
+  width: 53px;
 }
 
 .col-site {
-  width: 40px;
+  width: 46px;
 }
 
 td img {
-  display: inherit;
+  display: block;
 }
 
 thead {
@@ -64,7 +71,7 @@ thead {
 .table__thead-title {
   word-break: break-all;
   font-weight: 400;
-  font-size: 1em; //11px;
+  font-size: 11px;
   line-height: 13px;
   color: $dark-grey;
   background-color: $light-grey;
@@ -75,16 +82,34 @@ thead {
 }
 
 .short {
-  display: initial;
+  display: block;
 }
 
 .desktop {
   display: none;
 }
 
+.svg-mobile {
+  width: 18px;
+  height: 20px;
+}
+
+.svg-yellow {
+  fill: $star-yellow;
+  stroke-width: 1px;
+}
+
+.svg-yellow path {
+  stroke: $star-yellow;
+}
+
+.svg-none {
+  display: none;
+}
+
 td,
 th {
-  border: 0.16px solid $grey-grey;
+  border: 0.162491px solid rgba(200, 200, 200, 0.6);
   text-align: center;
 }
 
@@ -99,17 +124,13 @@ td a {
 .amount {
   @include tableFont;
   color: $green;
-  padding-top: 29px;
-  padding-bottom: 22px;
+  padding-top: 27px;
+  padding-bottom: 25px;
 }
 
 .reviews {
   @include tableFont;
   color: $blue;
-}
-
-.table__logo {
-  padding-left: 1%;
 }
 
 .td-padding {

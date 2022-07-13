@@ -1,21 +1,19 @@
 @mixin tableFont {
   font-weight: 500;
-  font-size: 1.5em; //16px;
+  font-size: 16px;
   line-height: 20px;
 }
 
 @mixin choiceFont {
   font-weight: 400;
-  font-size: 0.63em; //10px;
+  font-size: 10px;
   line-height: 129%;//13px;
-  padding-bottom: 14px;
 }
 
 @mixin commentsInfo {
-  font-weight: 500;
-  font-size: 0.6em; //10px;
-  font-style: italic;
-  line-height: 125%;//12px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
   color: $grey;
 }
 
@@ -30,7 +28,6 @@
 @mixin fontTitle {
   font-size: 26px;
   line-height: 32px;
-  padding-bottom: 25px;
 }
 
 @mixin fontText {
@@ -50,7 +47,7 @@
 @mixin input {
   max-width: 100%;
   width: 91%;
-  min-height: 55px;
+  min-height: 67px;
   border: 1px solid $grey-grey;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -58,8 +55,8 @@
 }
 
 @mixin darkBlocks {
-  margin-left: -10px;
-  margin-right: -11px;
+  margin-left: -37px;
+  margin-right: -25px;
   background: $hard-dark-blue;
   box-shadow: $box-shadow;
   border-radius: 28px;

@@ -1,8 +1,9 @@
 .content__wrapper-privacy {
-  padding-bottom: 21px;
-  border-top-left-radius: 28px;
-  border-top-right-radius: 28px;
-  margin: 20px 36px;
+  margin-bottom: 27px;
+  background-color: $white;
+  box-shadow: $box-shadow;
+  border-radius: 28px;
+  margin: 20px 26px 49px;
 }
 
 .privacy {
@@ -14,17 +15,19 @@
     font-size: 1em; //16px;
     border-left: 2px solid $blue;
     padding-left: 12px;
+    margin-bottom: 17px;
   }
 
   &__list {
-    padding-left: 0;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 15px;
     list-style-type: none;
     position: relative;
   }
 
   &__item {
-    padding-left: 13px;
-    padding-top: 16px;
+    padding-bottom: 13px;
   }
 }
 
@@ -36,9 +39,14 @@
   align-self: center;
 }
 
-.privacy__item-heading,
-.privacy__policy-text {
+.privacy__item-heading {
+  font-size: 10px;
   font-weight: 600;
+  line-height: 12px;
+  padding-bottom: 11px;
+}
+.privacy__policy-text {
+  font-weight: 400;
   font-size: 10px;
   line-height: 12px;
   color: $black;

@@ -1,5 +1,5 @@
 .form {
-  padding: 71px 18px 51px 25px;
+  padding-bottom: 50px;
   position: relative;
 
   &__title {
@@ -29,9 +29,8 @@
 
   .form__btn {
     font-weight: 500;
-    font-size: 0.7em; //11px;
+    font-size: 11px;
     line-height: 13px;
-
     @include btn-static;
     padding: 10.5px 20px;
     border-radius: 21px;

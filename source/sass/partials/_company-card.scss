@@ -1,10 +1,11 @@
 .page {
-  padding: 39px 0 35px;
+  padding: 21px 0 24px;
+  margin: 0 25px;
 }
 
 .company-card {
   position: relative;
-  padding: 28px 12px 0 17px;
+  padding: 28px 32px 0 17px;
   display: flex;
   flex-direction: column;
 
@@ -19,7 +20,7 @@
   &__description {
     font-weight: 400;
     font-size: 0.7em;//11px;
-    line-height: 15px;
+    line-height: 13px;
     color: $grey-grey;
     padding-bottom: 19px;
     padding-top: 10px;
@@ -27,12 +28,21 @@
 
   &__logo {
     padding-bottom: 20px;
+    width: 218px;
+    padding-left: 11px;
+    height: 78px;
+  }
+
+  &__screen {
+    padding-top: 35px;
+    width: 226px;
+    height: 152px;
   }
 
   &__buttons {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 30px;
   }
 
   &__btn {
@@ -40,21 +50,18 @@
     width: 168px;
     align-self: center;
   }
+}
 
   .company-card__btn:not(:last-child) {
     margin-bottom: 15px;
   }
 
-  &__screen {
-    padding-top: 30px;
-  }
-}
-
 .content__wrapper-border {
-  padding-bottom: 21px;
-  margin-bottom: 25px;
-  border-top-left-radius: 28px;
-  border-top-right-radius: 28px;
+  background-color: $white;
+  box-shadow: $box-shadow;
+  padding-bottom: 31px;
+  margin-bottom: 27px;
+  border-radius: 28px;
 }
 
 .company-card__logo-size {
@@ -84,10 +91,11 @@
 }
 
 .company-card__about {
-  padding-top: 36px;
+  padding-right: 5px;
 
   &-subtitle {
     @include cardTitle;
+    padding-bottom: 7px;
     font-size: 1em; //16px;
   }
 
@@ -96,17 +104,19 @@
     font-size: 0.6em; //10px;
     line-height: 13px;
     color: $black;
-    padding-top: 10px;
   }
+}
+
+.company-card__about:not(:first-child) {
+  padding-top: 36px;
 }
 
 .add-comment {
   &__help {
     font-weight: 500;
-    font-size: 0.6em; //11px;
+    font-size: 0.7em; //11px;
     line-height: 13px;
     color: $color-grey;
-    padding-top: 10px;
   }
 
   &__form {
@@ -137,9 +147,14 @@
 }
 
 .review {
+  border-radius: 16px;
+  padding: 35px 45px 57px 20px;
   &__list {
     list-style-type: none;
     padding-left: 0;
+    margin: 0;
+    margin-top: -17px;
+    font-style: italic;
   }
 
   &__item {
@@ -147,6 +162,7 @@
     padding-bottom: 10px;
 
     @include commentsInfo;
+    line-height: 12px;
     font-weight: 400;
     color: $black;
     border-bottom: 1px solid $grey;
