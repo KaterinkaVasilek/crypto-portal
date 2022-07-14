@@ -131,10 +131,9 @@
   }
 
   &__text {
-    -webkit-line-clamp: 1;
-    display: box;
-    box-orient: vertical;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
