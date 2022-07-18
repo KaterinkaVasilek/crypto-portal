@@ -72,6 +72,9 @@
   &-color {
     background: linear-gradient(98.66deg, #88a3e8 4.55%, #c8a1d6 109.18%);
     background-clip: text;
+    // справочник говорит, что "text" - это нестандартное значение для background-clip
+    // такое лучше использовать, только если полностью уверен, что это нужно
+    // https://webref.ru/css/background-clip
     -webkit-text-fill-color: transparent;
   }
 }

@@ -47,15 +47,18 @@
   transform: scale(0.9) rotateZ(-45deg) translate(-5px, 4px);
 }
 
+// этот стиль нужен ?
 .toggle .line2 {
   display: none;
 }
 
+// этот стиль нужен ?
 .toggle .line3 {
   background-color: $black;
   transform: scale(0.9) rotateZ(45deg) translate(-5px, -4px);
 }
 
+// этот стиль нужен ?
 .toggle .toggle-menu {
   background-color: $white;
 }
@@ -66,6 +69,7 @@
   transition: position 2.9s;
 }
 
+// лучше избегать неочевидных сокращений, можно назвать nav__bar-button или просто nav__button
 .nav__bar-btn {
   position: relative;
   border: none;
