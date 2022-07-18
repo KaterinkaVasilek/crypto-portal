@@ -86,6 +86,7 @@ body {
   }
 
   .company-card__logo-size {
+    // что в данном случае значит logo-size ?
     display: block;
     padding-bottom: 20px;
     align-self: center;
@@ -136,6 +137,7 @@ body {
 
 @media (min-width: $tablet-width) {
   //heafer
+  // кто такой heafer? )
   .header {
     min-width: $tablet-width;
     position: fixed;
@@ -1754,6 +1756,8 @@ body {
   }
 
   .footer__wrapper-desktop {
+    // модификатор идёт после символа "_"
+    // или это элемент "wrapper-desktop" ?
     &-content {
       padding: 44px 118px;
     }

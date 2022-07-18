@@ -90,6 +90,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   appearance: none;
   background-color: $very-dark-blue;
+  // very very very dark :-)
 }
 
 @mixin selectHover {
@@ -149,11 +150,14 @@
   border-color: $blue;
 }
 
+// опечатка (лучше поставить плагин в IDE, который будет подсказывать, где возможна опечатка, очень помогает в работе)
 @mixin footerTitleDescktop {
   color: $white;
   font-size: 1em;
 }
 
+// тут тоже смешан camelCase и kebab-case
+// по БЭМу, как я понимаю, следует использовать kebab-case
 @mixin footerFontDesktop {
   color: $white;
   font-size: 0.7em;
